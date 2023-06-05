@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Quiet Cranny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="h-screen bg-coffee-100 dark:bg-off-500 transition-colors duration-300">
+    <header class="sticky top-0 z-10 border-y-8 bg-coffee-200 text-coffee-500 dark:bg-off-400 dark:text-off-100 border-double border-coffee-300 dark:border-off-200 transition-colors duration-300">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">
+                <a href="./home.html" class="font-thin hover:opacity-90 hover:text-white">Quiet Cranny</a>
+            </h1>
+
+            <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+               <div class="bg-coffee-500 w-8 h-0.5 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-coffee-500 before:w-8 before:h-0.5 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-coffee-500 after:w-8 after:h-0.5 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500 dark:bg-off-100 dark:before:bg-off-100 dark:after:bg-off-100">
+
+               </div>
+            </button>
+            <nav class ="hidden md:block space-x-8 text-xl font-thin" aria-label="main">
+                <a href="./about.html" class="hover:opacity-90 text-2xl">About</a>
+                <a href="./blog.html" class="hover:opacity-90 hover:text-white">Blog</a>
+                <a href="./projects.html" class="hover:opacity-90 hover:text-white">Projects</a>
+                <a href="./contact.html" class="hover:opacity-90 hover:text-white">Contact Me</a>
+                
+            </nav>
+        </section>
+        <section id="mobile-menu" class="absolute top-68 bg-coffee-200  dark:bg-off-400 opacity-90 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden font-thin">
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="./home.html" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                <a href="./about.html" class="w-full text-center py-6 hover:opacity-90">About</a>
+                <a href="./blog.html" class="w-full text-center py-6 hover:opacity-90">Blog</a>
+                <a href="./projects.html" class="w-full text-center py-6 hover:opacity-90">Projects</a>
+                <a href="./contact.html" class="w-full text-center py-6 hover:opacity-90">Contact Me</a>
+                
+            </nav>
+        </section>
+    </header> 
+
+    <div class="max-w-4xl m-auto p-10 bg-coffee-100 text-coffee-500 dark:bg-off-500 dark:text-off-100">
+        <img class="border-2 border-coffee-500 dark:border-off-100" src="./img/nyanko.jpg" alt="">
+        <h1 class="text-3xl py-2 ">Hi, I'm Dara</h1>
+        <p class="font-roboto">I have had an interest in web development & design since I was a kid, and the first sites I ever made were anime fansites using Freewebs in 2005. However, I didn't start to seriously study up on various coding languages until 2021. This site is my first serious project since then that isn't just a school project or a copy of a tutorial. It also uses Tailwind CSS.<br /><br />
+
+        On my off-time, I enjoy drawing, gaming, and watching shows I've already watched. I also dabble in translating fancomics from Japanese -> English, but I'm still studying. When I'm both busy and not busy, I also enjoy listening to music-- I wouldn't say I listen to anything, but my listening interests are vast.<br /><br />
+
+        Some of my favorite places of all time include Himeji and Tokyo. I have massive wanderlust, so one day I'd love to travel to other places in Japan and the world!
+         </p>
+    </div>
+
+    <footer class="clear-both sticky top-[100vh] text-left p-2 font-thin z-10 border-y-4 bg-coffee-200 text-coffee-500 dark:bg-off-400 dark:text-off-100 border-double border-coffee-300 dark:border-off-200 transition-colors duration-300">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Dara Palmer. All Rights Reserved.
+    <div class="text-xs"><a href="./policy.html">Privacy Policy</a><a class="px-5" href="./terms.html">Terms & Conditions</a></footer></div>
+</body>
+</html>
